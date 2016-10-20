@@ -1,5 +1,7 @@
 # The WarpScript command
 
+In order to correctly works, the Warp10 backend end to reach *needs a WarpScript macro* to convert series to timelion format.
+
 ## Config 
 
 Add in timelion properties (src/core_plugins/timelion/timelion.json) the Warp 10 URL backend:
