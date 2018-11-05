@@ -1,6 +1,6 @@
 # The WarpScript command
 
-In order to correctly works, the Warp10 backend end to reach *needs a WarpScript macro* to convert series to timelion format.
+In order to correctly works, the Warp 10 backend end to reach *needs a WarpScript macro* to convert series to timelion format.
 
 ## Config 
 
@@ -13,7 +13,7 @@ Add in timelion properties (src/core_plugins/timelion/timelion.json) the Warp 10
   },
 ```
 
-Header corresponds to the pattern to match in error return (by default it's warp10). If using an old Warp 10 backend, it might be cityzendata.
+Header corresponds to the pattern to match in error return (by default it's warp10).
 
 Add the warpscript.js in (src/core_plugins/timelion/server/series_function) folder.
 
@@ -25,7 +25,7 @@ To use warpscript use the following command:
 .warpscript(code="YOUR WARPSCRIPT HERE")
 ```
 
-Then the FIRST element on the stack will be converted to TIMELION format. It expects to found a single GeoTime serie or a list of GTS.
+Then the FIRST element on the stack will be converted to TIMELION format. It expects to found a single Geo Time Series or a list of GTS.
 
 ## Position parameter 
 
@@ -56,7 +56,7 @@ Add some custom series attributes to each series to plot. The api can be found o
 
 ## Time interval
 
-The time interval parameter configured with timelion is push as a number variable in WarpScript (converted in base unit Time of the Warp10 platform reached).
+The time interval parameter configured with timelion is push as a number variable in WarpScript (converted in base unit Time of the Warp 10 platform reached).
 
 To reuse it just load it from the variable *intervalTime* somewhere in your WarpScript code: 
 
